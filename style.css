@@ -45,7 +45,12 @@ a:hover {
 }
 
 .bloc-lg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     padding: 100px 50px;
+    width: 80%;
 }
 
 .bloc-md {
@@ -53,7 +58,7 @@ a:hover {
 }
 
 .bloc-sm {
-    padding: 20px 50px;
+    padding: 30px 50px;
 }
 
 .bg-center,
@@ -100,7 +105,8 @@ a:hover {
 }
 
 .d-bloc {
-    color: rgba(255, 255, 255, .7);
+    color: #000000;
+    font-weight: bolder;
 }
 
 .d-bloc button:hover {
@@ -304,6 +310,7 @@ a:hover {
 .navbar-brand img {
     max-height: 200px;
     margin: 0 5px 0 0;
+    height: 100px;
     display: inline;
 }
 
@@ -360,6 +367,16 @@ a:hover {
     float: right;
     position: relative;
     z-index: 2;
+}
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+}
+.form p{
+margin: 20px;
 }
 
 @media (min-width: 768px) {
@@ -651,7 +668,7 @@ label,
 a {
     font-family: "helvetica";
     font-weight: 400;
-    color: #575757!important;
+    color: #000000!important;
 }
 
 .container {
@@ -677,7 +694,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 18px;
 }
 
 .tight-width-whitespace {
@@ -701,7 +718,7 @@ p {
 
 .social {
     max-width: 400px;
-    margin: auto auto auto auto;
+    margin: auto auto 20px auto;
 }
 
 h2 {
@@ -775,7 +792,7 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #FFFFFF!important;
 }
 
 .btn-atomic-tangerine {
