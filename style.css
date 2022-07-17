@@ -49,7 +49,7 @@ a:hover {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 100px 50px;
+    padding: 20px 10px;
     width: 80%;
 }
 
@@ -275,7 +275,7 @@ a:hover {
 }
 
 .voffset-lg {
-    margin-top: 80px;
+    margin-top: 20px;
 }
 
 .row-no-gutters {
@@ -454,7 +454,7 @@ nav .caret {
 
 .mg-md {
     margin-top: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .mg-lg {
@@ -761,8 +761,8 @@ h4 {
 }
 
 .portfolio-row {
-    margin-bottom: 44px;
-    margin-top: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .avatar {
