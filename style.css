@@ -831,7 +831,7 @@ tc-black{
 }
 
 .bg-dots-bg {
-    background-image: url("img/dots-bg.web");
+    background-image: url("img/dots-bg.webp");
 }
 
 .bg-lines-h2-bg {
@@ -842,7 +842,7 @@ tc-black{
     background-image: url("img/agence-la-panthere.webp");
 }
 
-. {
+.bg-presentation{
     background-image: url("img/image-de-presentation.webp");
 }
 
@@ -868,20 +868,7 @@ tc-black{
         max-width: 100%
     }
 }
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
-    .b-parallax {
-        background-attachment: scroll;
-    }
-}
-
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
-    .b-parallax {
-        background-attachment: scroll;
-    }
-}
-
-@media (max-width: 991px) {
+@media (max-width: 992px) {
     .container {
         width: 100%;
     }
@@ -894,8 +881,7 @@ tc-black{
         position: relative;
     }
     .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+        padding:15px;
     }
     .bloc-group,
     .bloc-group .bloc {
@@ -905,12 +891,11 @@ tc-black{
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+        padding-left:15px;
+        padding-right: 15px;
     }
 }
-
-@media (max-width: 767px) {
+@media (max-width: 768px) {
     .page-container {
         overflow-x: hidden;
         position: relative;
@@ -1059,7 +1044,9 @@ tc-black{
     align-items: center;
     max-width: 100%;
 }
-
+.bloc-mob-center-text {
+    text-align: center;
+}
 }
 
 @media (max-width: 400px) {
@@ -1073,10 +1060,4 @@ tc-black{
 .portfolio{
     width: 100%;
 }
-}
-
-@media (max-width: 767px) {
-    .bloc-mob-center-text {
-        text-align: center;
-    }
 }
