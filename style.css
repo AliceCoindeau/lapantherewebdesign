@@ -762,6 +762,8 @@ h4 {
 }
 .portfolio-thumb {
     margin-bottom: 24px;
+    width: 100%;
+    height: 100%;
 }
 
 .portfolio-row {
@@ -1051,19 +1053,24 @@ tc-black{
     text-align: center;
 }
 }
-
 @media (max-width: 400px) {
 .navbar-brand img {
         max-height: 40px;
         width: 100%;}
+.image-resize-mode{
+    width: 100px;
+    height: 100px;
+}
 .bloc {
         padding-left: 0;
         padding-right: 0;
     }
 .citation{
         width: 100%;
+        height: 125px;
     }
 .portfolio{
     width: 100%;
+    height: 90px;
 }
 }

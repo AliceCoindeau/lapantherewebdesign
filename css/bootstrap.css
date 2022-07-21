@@ -1437,8 +1437,8 @@ img {
 .thumbnail a>img,
 .thumbnail>img {
     display: block;
-    max-width: 100%;
-    height: auto
+    width: 100%;
+    height: 100%
 }
 
 .img-rounded {
@@ -1633,11 +1633,7 @@ p {
     line-height: 1.4
 }
 
-@media (min-width:768px) {
-    .lead {
-        font-size: 21px
-    }
-}
+
 
 .small,
 small {
@@ -1988,11 +1984,7 @@ pre code {
     margin-left: auto
 }
 
-@media (min-width:768px) {
-    .container {
-        width: 750px
-    }
-}
+
 
 @media (min-width:992px) {
     .container {
@@ -3560,6 +3552,24 @@ textarea.input-lg {
 }
 
 @media (min-width:768px) {
+        .container {
+            width: 750px
+        }
+            .lead {
+                font-size: 21px
+            }
+        
+        .navbar-static-top {
+        border-radius: 0
+        }
+        .container-fluid>.navbar-collapse,
+        .container-fluid>.navbar-header,
+        .container>.navbar-collapse,
+        .container>.navbar-header {
+                        margin-right: 0;
+                        margin-left: 0
+                    }
+        }
     .form-inline .form-group {
         display: inline-block;
         margin-bottom: 0;
@@ -4933,15 +4943,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
     left: auto
 }
 
-@media (min-width:768px) {
-    .nav-tabs.nav-justified>li {
-        display: table-cell;
-        width: 1%
-    }
-    .nav-tabs.nav-justified>li>a {
-        margin-bottom: 0
-    }
-}
+
 
 .nav-tabs.nav-justified>li>a {
     margin-right: 0;
@@ -4964,6 +4966,56 @@ textarea.input-group-sm>.input-group-btn>.btn {
     .nav-tabs.nav-justified>.active>a:hover {
         border-bottom-color: #fff
     }
+        .nav-tabs.nav-justified>li {
+            display: table-cell;
+            width: 1%
+        }
+        .nav-tabs.nav-justified>li>a {
+            margin-bottom: 0
+        }
+.nav-justified>li {
+display: table-cell;
+width: 1%
+}
+.nav-justified>li>a {
+margin-bottom: 0
+}
+.nav-tabs-justified>li>a {
+        border-bottom: 1px solid #ddd;
+        border-radius: 4px 4px 0 0
+    }
+.nav-tabs-justified>.active>a,
+    .nav-tabs-justified>.active>a:focus,
+    .nav-tabs-justified>.active>a:hover {
+        border-bottom-color: #fff
+    }
+.navbar {
+border-radius: 4px
+        }
+.navbar-header {
+            float: left
+        }
+.navbar-collapse {
+    width: auto;
+    border-top: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+.navbar-collapse.collapse {
+display: block !important;
+height: auto !important;
+padding-bottom: 0;
+overflow: visible !important
+}
+.navbar-collapse.in {
+overflow-y: visible
+}
+.navbar-fixed-bottom .navbar-collapse,
+.navbar-fixed-top .navbar-collapse,
+.navbar-static-top .navbar-collapse {
+padding-right: 0;
+padding-left: 0
+ }
 }
 
 .nav-pills>li {
@@ -5012,16 +5064,6 @@ textarea.input-group-sm>.input-group-btn>.btn {
     left: auto
 }
 
-@media (min-width:768px) {
-    .nav-justified>li {
-        display: table-cell;
-        width: 1%
-    }
-    .nav-justified>li>a {
-        margin-bottom: 0
-    }
-}
-
 .nav-tabs-justified {
     border-bottom: 0
 }
@@ -5035,18 +5077,6 @@ textarea.input-group-sm>.input-group-btn>.btn {
 .nav-tabs-justified>.active>a:focus,
 .nav-tabs-justified>.active>a:hover {
     border: 1px solid #ddd
-}
-
-@media (min-width:768px) {
-    .nav-tabs-justified>li>a {
-        border-bottom: 1px solid #ddd;
-        border-radius: 4px 4px 0 0
-    }
-    .nav-tabs-justified>.active>a,
-    .nav-tabs-justified>.active>a:focus,
-    .nav-tabs-justified>.active>a:hover {
-        border-bottom-color: #fff
-    }
 }
 
 .tab-content>.tab-pane {
@@ -5070,17 +5100,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
     border: 1px solid transparent
 }
 
-@media (min-width:768px) {
-    .navbar {
-        border-radius: 4px
-    }
-}
 
-@media (min-width:768px) {
-    .navbar-header {
-        float: left
-    }
-}
 
 .navbar-collapse {
     padding-right: 15px;
@@ -5096,29 +5116,7 @@ textarea.input-group-sm>.input-group-btn>.btn {
     overflow-y: auto
 }
 
-@media (min-width:768px) {
-    .navbar-collapse {
-        width: auto;
-        border-top: 0;
-        -webkit-box-shadow: none;
-        box-shadow: none
-    }
-    .navbar-collapse.collapse {
-        display: block !important;
-        height: auto !important;
-        padding-bottom: 0;
-        overflow: visible !important
-    }
-    .navbar-collapse.in {
-        overflow-y: visible
-    }
-    .navbar-fixed-bottom .navbar-collapse,
-    .navbar-fixed-top .navbar-collapse,
-    .navbar-static-top .navbar-collapse {
-        padding-right: 0;
-        padding-left: 0
-    }
-}
+
 
 .navbar-fixed-bottom .navbar-collapse,
 .navbar-fixed-top .navbar-collapse {
@@ -5140,26 +5138,14 @@ textarea.input-group-sm>.input-group-btn>.btn {
     margin-left: -15px
 }
 
-@media (min-width:768px) {
-    .container-fluid>.navbar-collapse,
-    .container-fluid>.navbar-header,
-    .container>.navbar-collapse,
-    .container>.navbar-header {
-        margin-right: 0;
-        margin-left: 0
-    }
-}
+
 
 .navbar-static-top {
     z-index: 1000;
     border-width: 0 0 1px
 }
 
-@media (min-width:768px) {
-    .navbar-static-top {
-        border-radius: 0
-    }
-}
+
 
 .navbar-fixed-bottom,
 .navbar-fixed-top {
