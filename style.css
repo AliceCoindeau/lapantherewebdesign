@@ -316,6 +316,8 @@ a:hover {
 
 .navbar-brand img[src$=svg] {
     min-width: 100px;
+    height: 100Px;
+    max-height: 200px;
 }
 
 .nav-center .navbar-brand img {
@@ -970,7 +972,7 @@ tc-black{
     }
     .navbar-brand img {
         max-height: 40px;
-        width: auto;
+        width: 100%;
     }
     .nav-invert .navbar-header {
         float: none;
@@ -1051,7 +1053,10 @@ tc-black{
 }
 
 @media (max-width: 400px) {
-    .bloc {
+.navbar-brand img {
+        max-height: 40px;
+        width: 100%;}
+.bloc {
         padding-left: 0;
         padding-right: 0;
     }
