@@ -1067,8 +1067,7 @@ tc-black{
     }
 .citation{
         width: 100%;
-        font-size: 14px;
-        font-style: italic;
+        object-fit: cover;
     }
 .portfolio{
     width: 100%;
