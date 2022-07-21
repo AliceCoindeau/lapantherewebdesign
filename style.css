@@ -840,6 +840,7 @@ tc-black{
 
 .bg-banniere {
     background-image: url("img/agence-la-panthere.webp");
+    width: 100%;
 }
 
 .bg-presentation{
